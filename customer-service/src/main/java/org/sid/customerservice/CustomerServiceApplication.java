@@ -17,7 +17,7 @@ public class CustomerServiceApplication {
     @Bean
     CommandLineRunner start(CustomerRepository customerRepository){
         return args -> {
-            customerRepository.save(new Customer(null, "mouad","mouad@gmail.com"));
+            customerRepository.save(new Customer(null, "Mouad","mouad@gmail.com"));
             customerRepository.save(new Customer(null, "zakaria","zak@gmail.com"));
             customerRepository.save(new Customer(null, "med","med@gmail.com"));
             customerRepository.findAll().forEach(c ->{
